@@ -1,0 +1,38 @@
+HTML:
+<html>
+  <head>
+    <title>寶可夢對戰遊戲 測試版 </title>
+  </head>
+  <body>
+    <h1>寶可夢對戰遊戲 測試版 v.0.1 </h1>
+    <button id='start-btn'>開始對戰</button>
+  </body>
+</html>
+
+CSS:body {
+  text-align: center;
+}
+h1 {
+  font-family: Helvetica;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-family: Helvetica;
+  background: #5599FF;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+JS:
+var startBtn = document.querySelctor('#start-btn');
+
+var choice = prompt('請問你要派哪隻神奇寶貝呢? 0. 菊草葉 1.火球鼠 2.小鋸鱷',0);
+var CoChoice = Math.floor(Math.random() * 3);
+
+startBtn.addEventListener('click', function() {
+  
+});
